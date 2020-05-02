@@ -7,7 +7,6 @@ import android.os.Bundle;
 import com.sid.dagger.practiseapp.car.Car;
 import com.sid.dagger.practiseapp.dagger.CarComponent;
 import com.sid.dagger.practiseapp.dagger.DaggerCarComponent;
-import com.sid.dagger.practiseapp.dagger.DiesalEngineModule;
 
 import javax.inject.Inject;
 
@@ -22,7 +21,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         CarComponent component = DaggerCarComponent.builder()
-                .diesalEngineModule(new DiesalEngineModule(100))
+                .horsePower(150)
+                .engineCapacity(1400)
                 .build();
         component.inject(this);
 
