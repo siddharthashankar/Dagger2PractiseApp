@@ -7,11 +7,13 @@ import javax.inject.Inject;
 public class DiesalEngine implements Engine {
     private static final String TAG = "Car";
 
-    @Inject
-    public DiesalEngine(){}
+    private int horsePower;
+    public DiesalEngine(int horsePower){
+        this.horsePower = horsePower;
+    }
 
     @Override
     public void start() {
-        Log.d(TAG, "DiesalEngine start---");
+        Log.d(TAG, "DiesalEngine start---HorsePower: "+horsePower);
     }
 }
