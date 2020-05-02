@@ -1,4 +1,8 @@
-package com.sid.dagger.practiseapp;
+package com.sid.dagger.practiseapp.dagger;
+
+import com.sid.dagger.practiseapp.car.Rims;
+import com.sid.dagger.practiseapp.car.Tires;
+import com.sid.dagger.practiseapp.car.Wheels;
 
 import dagger.Module;
 import dagger.Provides;

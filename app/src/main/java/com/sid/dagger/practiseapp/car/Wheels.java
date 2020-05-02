@@ -1,6 +1,4 @@
-package com.sid.dagger.practiseapp;
-
-import javax.inject.Inject;
+package com.sid.dagger.practiseapp.car;
 
 public class Wheels {
 private Rims rims;

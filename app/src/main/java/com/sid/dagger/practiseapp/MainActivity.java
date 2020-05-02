@@ -4,10 +4,14 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+import com.sid.dagger.practiseapp.car.Car;
+import com.sid.dagger.practiseapp.dagger.CarComponent;
+
 import javax.inject.Inject;
 
 public class MainActivity extends AppCompatActivity {
-    @Inject Car car;
+    @Inject
+    Car car;
    // @Inject Remote remote;
 
     @Override

@@ -1,4 +1,4 @@
-package com.sid.dagger.practiseapp;
+package com.sid.dagger.practiseapp.car;
 
 import android.util.Log;
 
@@ -16,6 +16,7 @@ public class Car {
     }
 
     public void drive(){
+        mEngine.start();
         Log.d(TAG, "drive: driving3---");
     }
     @Inject
