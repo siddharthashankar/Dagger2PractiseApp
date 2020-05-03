@@ -8,16 +8,18 @@ public class Car {
     private static final String TAG = "Car";
     private Engine mEngine;
     private Wheels mWheels;
+    private Driver mDriver;
 
     @Inject
-    public Car(Engine mEngine, Wheels mWheels) {
+    public Car(Engine mEngine, Wheels mWheels, Driver driver) {
         this.mEngine = mEngine;
         this.mWheels = mWheels;
+        this.mDriver = driver;
     }
 
     public void drive(){
         mEngine.start();
-        Log.d(TAG, "drive: driving3---");
+        Log.d(TAG, mDriver+" drives "+this);
     }
     @Inject
     public void enableRemote(Remote remote){

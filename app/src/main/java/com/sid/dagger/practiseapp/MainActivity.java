@@ -12,7 +12,7 @@ import javax.inject.Inject;
 
 public class MainActivity extends AppCompatActivity {
     @Inject
-    Car car;
+    Car car1, car2;
    // @Inject Remote remote;
 
     @Override
@@ -26,7 +26,8 @@ public class MainActivity extends AppCompatActivity {
                 .build();
         component.inject(this);
 
-        car.drive();
+        car1.drive();
+        car2.drive();
        // car.enableRemote(remote);
     }
 }
